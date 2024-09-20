@@ -1,3 +1,7 @@
 #banner{
     background-image: url('../images/banner.png');
 }
+
+.border-bottom{
+    border-bottom: 6px solid #1bd300;
+}
