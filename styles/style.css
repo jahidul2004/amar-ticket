@@ -1,5 +1,8 @@
 #banner{
     background-image: url('../images/banner.png');
+    opacity: 0.9;
+    background-size:cover;
+    background-position: center;
 }
 
 .border-bottom{
