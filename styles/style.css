@@ -8,3 +8,7 @@
 .border-bottom{
     border-bottom: 4px solid #1bd300;
 }
+
+.btn:hover{
+    background-color: #1bd300;
+}
