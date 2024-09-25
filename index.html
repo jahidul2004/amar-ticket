@@ -834,7 +834,10 @@
                                     />
                                 </div>
                                 <div class="form-control mt-6">
-                                    <button class="btn bg-[#1bd300] text-white">
+                                    <button
+                                        id="next"
+                                        class="btn bg-[#1bd300] text-white"
+                                    >
                                         Next
                                     </button>
                                 </div>
@@ -908,6 +911,25 @@
             </footer>
         </section>
         <!-- Footer section end -->
+
+        <!-- Modal Area start -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+                <h3 class="text-lg font-bold">Hello!</h3>
+                <p class="py-4">
+                    Press ESC key or click the button below to close
+                </p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <button onclick="relodePage();" class="btn">
+                            Close
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <!-- Modal Area end -->
 
         <!-- JS add -->
         <script src="js/script.js"></script>

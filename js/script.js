@@ -48,3 +48,12 @@ document.getElementById("coupon-apply").addEventListener("click", function () {
         document.getElementById("coupon-apply").classList.add("hidden");
     }
 });
+
+
+function relodePage(){
+    location.reload();
+}
+
+document.getElementById('next').addEventListener('click',function(){
+    my_modal_1.showModal();
+});
