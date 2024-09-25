@@ -12,3 +12,7 @@
 .btn:hover{
     background-color: #1bd300;
 }
+
+.btn-s:hover{
+    background-color: transparent;
+}
