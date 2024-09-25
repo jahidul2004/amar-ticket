@@ -33,3 +33,18 @@ function buttonClick(btnId) {
         return;
     }
 }
+
+document.getElementById("coupon-apply").addEventListener("click", function () {
+    let coupon = document.getElementById("coupon-input").value;
+    if (coupon === "tsi") {
+        let grandTotal = document.getElementById("grand-total").innerText;
+        let newGrand = grandTotal - 50;
+        document.getElementById("grand-total").innerText = newGrand;
+        document.getElementById("coupon-input").value = "";
+
+        document.getElementById("discount-line").classList.remove("hidden");
+        document.getElementById("discount-line").classList.add("flex");
+        document.getElementById("discount-amount").innerText = 50;
+        document.getElementById("coupon-apply").classList.add("hidden");
+    }
+});
