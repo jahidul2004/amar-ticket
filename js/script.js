@@ -52,6 +52,8 @@ document.getElementById("coupon-apply").addEventListener("click", function () {
         document.getElementById("discount-line").classList.add("flex");
         document.getElementById("discount-amount").innerText = 50;
         document.getElementById("coupon-apply").classList.add("hidden");
+    } else {
+        alert("Invalid Coupon Code");
     }
 });
 
