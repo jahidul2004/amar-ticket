@@ -55,10 +55,19 @@ document.getElementById("coupon-apply").addEventListener("click", function () {
     }
 });
 
+document.getElementById("next").addEventListener("click", function (event) {
+    event.preventDefault();
+    let fullName = document.getElementById("full-name").value;
+    let phoneNumber = document.getElementById("phone-number").value;
+    let email = document.getElementById("email").value;
+
+    if (fullName === "" || phoneNumber === "" || email === "") {
+        alert("Please fill all the fields");
+    } else {
+        my_modal_1.showModal();
+    }
+});
+
 function reloadPage() {
     location.reload();
 }
-
-document.getElementById("next").addEventListener("click", function () {
-    my_modal_1.showModal();
-});
